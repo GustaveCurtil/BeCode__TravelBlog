@@ -1,0 +1,235 @@
+*, html {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(255, 245, 245, 1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    margin-bottom: auto;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*LANDING PAGE*/
+.achtergrond {
+    background-image: url(media/fotobauke.JPG);
+    background-position: 80% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    z-index: -20;
+}
+
+.landingpage {
+    color: rgba(255, 245, 245, 1);
+    overflow: hidden;
+    
+}
+
+.landingpage a {
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+}
+.home {
+    transform: scale(math(1/1.2));
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home div {
+    max-width: 600px;
+        transform: scale(math(1/1.2));
+}
+
+h1 {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(255, 245, 245, 1);
+}
+h2 {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(255, 245, 245, 1);
+}
+
+h3 {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 40px;
+    line-height: normal;
+}
+
+
+/*AANBOD*/
+
+.aanbod{
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+
+.poster {
+    width: 100%;
+    aspect-ratio: 2/1;
+    line-height: 0;
+    position: relative;
+    display: inline-block;
+    cursor:pointer
+}
+
+.poster h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    font-family: 'Kulim Park';
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(255, 245, 245, 1);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit:cover;
+    display: block;
+}
+
+.uit {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.uit p {
+    margin: 5px 0 5px 0;
+}
+
+.meer_info {
+    text-align: center;
+    height: auto;
+    margin: 8px auto 20px auto;
+    width: 100%;
+    
+}
+
+.meer_info a {
+    background-color: rgba(205, 116, 99, 1);
+    padding: 4px 0px;
+    display: inline-block;
+    border-radius: 25px;
+    color: rgba(255, 245, 245, 1);
+    text-decoration: none;
+    font-family: 'kulim park';
+    font-weight: 400;
+    font-size: 18px;
+    cursor: help;
+    min-width: 45%;
+}
+
+table {
+    width: 100%;
+}
+
+td:nth-child(2){
+    text-align: end;
+}
+
+/*Verhaal */
+h4 {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+
+    line-height: normal;
+}
+
+p, ul {
+    letter-spacing: px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+li {
+    list-style-position: inside;
+ }
+
+ .foto {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-color: blueviolet;
+    margin-bottom: 30px;
+}
+
+ /*Contact*/
+ form {
+    text-align: center;
+ }
+
+input[type=text], textarea, select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: 1px gray solid;
+    resize: vertical;
+    font-family: roboto;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+
+select{
+    text-align: center;
+    padding: 0;
+}
+
+textarea {
+    height: 100px;
+    color: rgb(0, 0, 0);
+}
+
+input[type=submit] {
+    background-color: rgba(205, 116, 99, 1);
+    border: 0;
+    padding: 14px 0px;
+    border-radius: 25px;
+    color: rgba(255, 245, 245, 1);
+    text-decoration: none;
+    font-family: 'kulim park';
+    font-weight: 400;
+    font-size: 18px;
+    cursor: help;
+    width: 45%;
+}
+
+

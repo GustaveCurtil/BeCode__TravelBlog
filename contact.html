@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400;700&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigatie.css">
+    <title>WIJSLIJF - contact</title>
+</head>
+
+<body>
+    <header class="wijzeheader">
+        <h1 class="wijzetitel"><a href="index.html">WIJSLIJF</a></h1>
+        <nav class="wijzenavigatie">
+            <a href="aanbod.html">Aanbod</a>
+            <a href="verhaal.html">Verhaal</a>
+            <a class="current" href="contact.html">Contact</a>  
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <select id="aanbodkeuze" name="aanbodkeuze">
+                <option value="">Selecteer een optie</option>
+                <option value="individueel">Individueel</option>
+                <option value="traject 1">Traject 1</option>
+                <option value="traject 2">Traject 2</option>
+                <option value="traject 3">Traject 3</option>
+                <option value="organisaties">Organisaties</option>
+                <option value="andere">Andere</option>
+            </select>
+            <input type="text" id="email" name="email" placeholder="e-mail">
+            <input type="text" id="gsm" name="gsm" placeholder="gsm">
+            <textarea>vragen of andere bedenkingen (optioneel)</textarea>
+            <input type="submit">
+        </form>
+    </main>
+
+    <footer>
+        <div class="boven">
+            <a onclick="topFunction()" id="naarBoven">↑</a>
+        </div>
+    <div  class="wijzefooter">
+        <a href="instangram.com"><img src="media/new-Instagram-logo-white-glyph.png"></a>
+        <a href="bauke@wijslijf.be">bauke@wijslijf.be</a>
+        <a href="iets">0477983300</a>
+        <a href="google">wijslijfstraat 43, 9000 GENT</a>
+        <p>BE12 1234 1234 1234</p>
+        <p>btw-nummer: 123 234 455</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
