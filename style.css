@@ -82,6 +82,10 @@ h3 {
     cursor:pointer;
 }
 
+.poster:nth-child(3), .poster:nth-child(5) {
+    margin-top: 24px;
+}
+
 .poster h1 {
     position: absolute;
     top: 50%; 
@@ -116,10 +120,6 @@ img {
     width: calc(100% / 3);
     aspect-ratio: 1/1;
     object-fit: cover;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 1px solid rgba(255, 245, 245, 1);
 }
 
 
