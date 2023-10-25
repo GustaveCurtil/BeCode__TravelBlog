@@ -80,6 +80,10 @@ h3 {
     position: relative;
     display: inline-block;
     cursor:pointer;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .poster:nth-child(3), .poster:nth-child(5) {
@@ -144,7 +148,7 @@ li {
 
  .foto {
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 1/1;
     margin-bottom: 30px;
     object-fit: cover;
 }
