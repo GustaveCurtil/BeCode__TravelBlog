@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 main {
@@ -23,21 +24,20 @@ main {
 }
 
 /*LANDING PAGE*/
-.achtergrond {
-    background-image: url(media/fotobauke.JPG);
-    background-position: 80% 10%;
+
+.landingpage {
+    overflow: hidden;
+    background-image: url(media/g2.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 110%;
-    height: 110%;
+    background-size:cover;
+    object-position: 50% 50%;
+    height: 100vh;
+    width: 100vw;
     z-index: -20;
 }
 
-.landingpage {
+.landingpage h1 {
     color: rgba(255, 245, 245, 1);
-    overflow: hidden;
-    
 }
 
 .landingpage a {
@@ -47,35 +47,19 @@ main {
     position: absolute;
     z-index: 20;
 }
-.home {
-    transform: scale(math(1/1.2));
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.home div {
-    max-width: 600px;
-        transform: scale(math(1/1.2));
-}
 
 h1 {
     font-family: 'Kulim Park', sans-serif;
     font-size: 40px;
     font-weight: 900;
     line-height: 1;
-    color: rgba(255, 245, 245, 1);
+    color: rgb(170, 75, 56);
+    margin-bottom: 5px;
 }
 h2 {
     font-family: 'Kulim Park', sans-serif;
     font-size: 36px;
     font-weight: 900;
-    color: rgba(255, 245, 245, 1);
 }
 
 h3 {
@@ -87,12 +71,7 @@ h3 {
 }
 
 
-/*AANBOD*/
-
-.aanbod{
-    width: 100%;
-    padding: 5px 0 5px 0;
-}
+/*TRAVEL*/
 
 .poster {
     width: 100%;
@@ -100,7 +79,7 @@ h3 {
     line-height: 0;
     position: relative;
     display: inline-block;
-    cursor:pointer
+    cursor:pointer;
 }
 
 .poster h1 {
@@ -111,7 +90,7 @@ h3 {
     text-align: center;
     font-family: 'Kulim Park';
     font-weight: 600;
-    font-size: 40px;
+    font-size: 44px;
     color: rgba(255, 245, 245, 1);
 }
 
@@ -126,50 +105,30 @@ img {
 .uit {
     display: none;
     flex-direction: column;
-    width: 100%;
-    margin: 10px 0 10px 0;
 }
 
-.uit p {
-    margin: 5px 0 5px 0;
+.instapics {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.meer_info {
-    text-align: center;
-    height: auto;
-    margin: 8px auto 20px auto;
-    width: 100%;
-    
+.instapics img {
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid rgba(255, 245, 245, 1);
 }
 
-.meer_info a {
-    background-color: rgba(205, 116, 99, 1);
-    padding: 4px 0px;
-    display: inline-block;
-    border-radius: 25px;
-    color: rgba(255, 245, 245, 1);
-    text-decoration: none;
-    font-family: 'kulim park';
-    font-weight: 400;
-    font-size: 18px;
-    cursor: help;
-    min-width: 45%;
-}
 
-table {
-    width: 100%;
-}
-
-td:nth-child(2){
-    text-align: end;
-}
 
 /*Verhaal */
 h4 {
     font-family: 'Kulim Park', sans-serif;
     font-size: 22px;
     font-weight: 900;
-
     line-height: normal;
 }
 
@@ -186,8 +145,8 @@ li {
  .foto {
     width: 100%;
     aspect-ratio: 3/2;
-    background-color: blueviolet;
     margin-bottom: 30px;
+    object-fit: cover;
 }
 
  /*Contact*/
@@ -214,12 +173,12 @@ select{
 }
 
 textarea {
-    height: 100px;
+    height: 300px;
     color: rgb(0, 0, 0);
 }
 
 input[type=submit] {
-    background-color: rgba(205, 116, 99, 1);
+    background-color: rgb(170, 75, 56);
     border: 0;
     padding: 14px 0px;
     border-radius: 25px;

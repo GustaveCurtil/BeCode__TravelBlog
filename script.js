@@ -1,6 +1,6 @@
     /*vouwsysteem*/
     function openVouwen1() {
-        var x = document.getElementById("individueel");
+        var x = document.getElementById("georgia");
         if (x.style.display === "none") {
           x.style.display = "flex";
         } else {
@@ -9,7 +9,7 @@
       }
 
       function openVouwen2() {
-        var x = document.getElementById("groeps");
+        var x = document.getElementById("transardennaise");
         if (x.style.display === "none") {
           x.style.display = "flex";
         } else {
@@ -18,7 +18,7 @@
       }
       
       function openVouwen3() {
-        var x = document.getElementById("organisaties");
+        var x = document.getElementById("pyrenees");
         if (x.style.display === "none") {
           x.style.display = "flex";
         } else {
