@@ -111,6 +111,7 @@ img {
 }
 
 .uit {
+    display: none;
     flex-direction: column;
 }
 
@@ -136,8 +137,6 @@ h4 {
 }
 
 p, ul {
-    letter-spacing: px;
-    margin-bottom: 20px;
     font-size: 16px;
 }
 
@@ -153,9 +152,6 @@ li {
 }
 
  /*Contact*/
- form {
-    text-align: center;
- }
 
 input[type=text], textarea, select {
     width: 100%;
